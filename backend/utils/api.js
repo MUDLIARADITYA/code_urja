@@ -32,7 +32,7 @@ export const getHeroLayout = async ({ heading, subhead, image, cta, style }) => 
     }
     
     prompt += `
-    Ensure the component is written in JavaScript and does not require any additional npm packages.`;
+    Ensure the component is written in JavaScript and does not require any additional npm packages  .`;
 
     const response = await ai.models.generateContent({
         model: "gemini-2.0-flash",
@@ -105,7 +105,7 @@ export const getFooterLayout = async ({ links, title }) => {
     });
     
     prompt += `
-    Ensure the component is written in JavaScript and does not require any additional npm packages.`;
+    Ensure the component is written in JavaScript and does not require any additional npm packages. want to fetch parent div only of that component ,dont give anything other than code `;
 
     const response = await ai.models.generateContent({
         model: "gemini-2.0-flash",
